@@ -18,6 +18,7 @@
                 <li><a href="#home">Home</a></li>
                 <li><a href="#about">About</a></li>
                 <li><a href="#process">Process</a></li>
+                <li><a href="#gallery">Gallery</a></li>
                 <li><a href="#testimonials">Testimonials</a></li>
                 <li><a href="#discovery">Discovery</a></li>
             </ul>
@@ -36,6 +37,7 @@
             <li><a href="#home"><i class="fas fa-home"></i> Home</a></li>
             <li><a href="#about"><i class="fas fa-user"></i> About</a></li>
             <li><a href="#process"><i class="fas fa-cogs"></i> Process</a></li>
+            <li><a href="#gallery"><i class="fas fa-images"></i> Gallery</a></li>
             <li><a href="#testimonials"><i class="fas fa-star"></i> Testimonials</a></li>
             <li><a href="#discovery"><i class="fas fa-envelope"></i> Discovery</a></li>
         </ul>
@@ -241,57 +243,10 @@
                 </div>
             </div>
             
-            <!-- Desktop Table View -->
-            <div class="comparison-table-wrapper desktop-only">
-                <div class="comparison-table-header">
-                    <div class="feature-header">Features</div>
-                    <div class="iron-butterfly-header">Iron Butterfly</div>
-                    <div class="competitors-header">Competitors</div>
-                </div>
-                
-                <div class="comparison-features">
-                    <div class="comparison-feature-row">
-                        <div class="feature-name">Complete holistic assessment in one visit</div>
-                        <div class="iron-butterfly-check"><i class="fas fa-check"></i></div>
-                        <div class="competitor-x"><i class="fas fa-times"></i></div>
-                    </div>
-                    
-                    <div class="comparison-feature-row">
-                        <div class="feature-name">One-stop shop for all health needs</div>
-                        <div class="iron-butterfly-check"><i class="fas fa-check"></i></div>
-                        <div class="competitor-x"><i class="fas fa-times"></i></div>
-                    </div>
-                    
-                    <div class="comparison-feature-row">
-                        <div class="feature-name">Personalized supplement stack strategy</div>
-                        <div class="iron-butterfly-check"><i class="fas fa-check"></i></div>
-                        <div class="competitor-x"><i class="fas fa-times"></i></div>
-                    </div>
-                    
-                    <div class="comparison-feature-row">
-                        <div class="feature-name">Trauma healing + athletic performance</div>
-                        <div class="iron-butterfly-check"><i class="fas fa-check"></i></div>
-                        <div class="competitor-x"><i class="fas fa-times"></i></div>
-                    </div>
-                    
-                    <div class="comparison-feature-row">
-                        <div class="feature-name">PEMF therapy & hyperbaric protocols</div>
-                        <div class="iron-butterfly-check"><i class="fas fa-check"></i></div>
-                        <div class="competitor-x"><i class="fas fa-times"></i></div>
-                    </div>
-                    
-                    <div class="comparison-feature-row">
-                        <div class="feature-name">Financial optimization included</div>
-                        <div class="iron-butterfly-check"><i class="fas fa-check"></i></div>
-                        <div class="competitor-x"><i class="fas fa-times"></i></div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Mobile Card View -->
-            <div class="comparison-mobile mobile-only">
-                <div class="comparison-card">
-                    <div class="card-header iron-butterfly-card">
+            <!-- Side-by-Side Card Layout -->
+            <div class="comparison-cards-container">
+                <div class="comparison-card iron-butterfly-card">
+                    <div class="card-header">
                         <i class="fas fa-crown"></i>
                         <h4>Iron Butterfly Coaching</h4>
                         <p class="card-subtitle">Complete Transformation</p>
@@ -321,6 +276,14 @@
                             <i class="fas fa-check-circle"></i>
                             <span>Financial optimization included</span>
                         </div>
+                        <div class="feature-item">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Progress tracking & analytics</span>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Community support network</span>
+                        </div>
                     </div>
                 </div>
 
@@ -328,8 +291,8 @@
                     <span>VS</span>
                 </div>
 
-                <div class="comparison-card">
-                    <div class="card-header competitor-card">
+                <div class="comparison-card competitor-card">
+                    <div class="card-header">
                         <i class="fas fa-users"></i>
                         <h4>Traditional Competitors</h4>
                         <p class="card-subtitle">Limited Approach</p>
@@ -359,11 +322,17 @@
                             <i class="fas fa-times-circle"></i>
                             <span>No financial guidance</span>
                         </div>
+                        <div class="feature-item missing">
+                            <i class="fas fa-times-circle"></i>
+                            <span>Basic progress tracking</span>
+                        </div>
+                        <div class="feature-item missing">
+                            <i class="fas fa-times-circle"></i>
+                            <span>Limited community access</span>
+                        </div>
                     </div>
                 </div>
             </div>
-
-
                 
             <div class="comparison-cta">
                 <a href="#discovery" class="comparison-button">
@@ -371,6 +340,208 @@
                     Experience the Iron Butterfly Difference
                 </a>
             </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section class="section gallery fade-in" id="gallery">
+        <h2 class="section-title fade-in">
+            <i class="fas fa-images"></i>
+            Transformation Gallery
+        </h2>
+        <p class="gallery-subtitle">Witness the Iron Butterfly transformations - from healing journeys to athletic achievements</p>
+        
+        <div class="gallery-grid">
+            <div class="gallery-item stagger-animation">
+                <div class="gallery-image">
+                    <img src="images/transform1.jpg" alt="Client Transformation 1" onerror="this.src='https://via.placeholder.com/400x300/F8F3EB/D4AF37?text=Transformation+1'">
+                    <div class="gallery-overlay">
+                        <div class="gallery-content">
+                            <h4>Incredible Transformation</h4>
+                            <p>From struggle to strength</p>
+                            <i class="fas fa-search-plus"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="gallery-item stagger-animation">
+                <div class="gallery-image">
+                    <img src="images/transform2.jpg" alt="Client Transformation 2" onerror="this.src='https://via.placeholder.com/400x300/F8F3EB/D4AF37?text=Transformation+2'">
+                    <div class="gallery-overlay">
+                        <div class="gallery-content">
+                            <h4>Life-Changing Journey</h4>
+                            <p>Mind, body, and spirit transformation</p>
+                            <i class="fas fa-search-plus"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="gallery-item stagger-animation">
+                <div class="gallery-image">
+                    <img src="images/transform3.jpg" alt="Client Transformation 3" onerror="this.src='https://via.placeholder.com/400x300/F8F3EB/D4AF37?text=Transformation+3'">
+                    <div class="gallery-overlay">
+                        <div class="gallery-content">
+                            <h4>Empowered & Strong</h4>
+                            <p>Discovering inner strength</p>
+                            <i class="fas fa-search-plus"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="gallery-item stagger-animation">
+                <div class="gallery-image">
+                    <img src="images/transform4.jpg" alt="Client Transformation 4" onerror="this.src='https://via.placeholder.com/400x300/F8F3EB/D4AF37?text=Transformation+4'">
+                    <div class="gallery-overlay">
+                        <div class="gallery-content">
+                            <h4>Complete Wellness</h4>
+                            <p>Holistic health transformation</p>
+                            <i class="fas fa-search-plus"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="gallery-item stagger-animation">
+                <div class="gallery-image">
+                    <img src="images/transform5.jpg" alt="Client Transformation 5" onerror="this.src='https://via.placeholder.com/400x300/F8F3EB/D4AF37?text=Transformation+5'">
+                    <div class="gallery-overlay">
+                        <div class="gallery-content">
+                            <h4>Athletic Achievement</h4>
+                            <p>Peak performance unlocked</p>
+                            <i class="fas fa-search-plus"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="gallery-item stagger-animation">
+                <div class="gallery-image">
+                    <img src="images/transform6.jpg" alt="Client Transformation 6" onerror="this.src='https://via.placeholder.com/400x300/F8F3EB/D4AF37?text=Transformation+6'">
+                    <div class="gallery-overlay">
+                        <div class="gallery-content">
+                            <h4>Confidence Restored</h4>
+                            <p>Embracing a new lifestyle</p>
+                            <i class="fas fa-search-plus"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="gallery-cta">
+            <a href="#discovery" class="gallery-button">
+                <i class="fas fa-camera"></i>
+                Start Your Transformation Story
+            </a>
+        </div>
+    </section>
+
+    <!-- Recommended Products & Affiliate Partners Section -->
+    <section class="section recommended-products fade-in" id="recommended">
+        <h2 class="section-title fade-in">
+            <i class="fas fa-star"></i>
+            Recommended Products & Partners
+        </h2>
+        <p class="recommended-subtitle">Carefully selected products and trusted partners for your transformation journey</p>
+        
+        <div class="products-grid">
+            <!-- Product Cards with Images -->
+            <div class="product-card stagger-animation">
+                <div class="product-image">
+                    <img src="images/product1.webp" alt="Premium Fitness Product" onerror="this.src='https://via.placeholder.com/300x200/F8F3EB/D4AF37?text=Product+1'">
+                    <div class="product-badge">Best Seller</div>
+                </div>
+                <div class="product-content">
+                    <h4>Premium Fitness Gear</h4>
+                    <p>High-quality equipment for your fitness journey.</p>
+                    <a href="https://mydailydefense.com/?ref=SABRINAFAN" target="_blank" class="product-button">
+                        <i class="fas fa-shopping-cart"></i>
+                        Shop Now
+                    </a>
+                </div>
+            </div>
+            
+            <div class="product-card stagger-animation">
+                <div class="product-image">
+                    <img src="images/product2.webp" alt="Health Supplements" onerror="this.src='https://via.placeholder.com/300x200/F8F3EB/D4AF37?text=Product+2'">
+                    <div class="product-badge">Top Rated</div>
+                </div>
+                <div class="product-content">
+                    <h4>Health Supplements</h4>
+                    <p>Essential nutrients for optimal health and performance.</p>
+                    <a href="https://secure.iherb.com/rewards/rewards-program" target="_blank" class="product-button">
+                        <i class="fas fa-shopping-cart"></i>
+                        Shop Now
+                    </a>
+                </div>
+            </div>
+            
+            <div class="product-card stagger-animation">
+                <div class="product-image">
+                    <img src="images/product3.png" alt="Wellness Products" onerror="this.src='https://via.placeholder.com/300x200/F8F3EB/D4AF37?text=Product+3'">
+                    <div class="product-badge">Essential</div>
+                </div>
+                <div class="product-content">
+                    <h4>Wellness Essentials</h4>
+                    <p>Complete wellness support for your daily routine.</p>
+                    <a href="https://nutricartel.com/?aff=410" target="_blank" class="product-button">
+                        <i class="fas fa-shopping-cart"></i>
+                        Shop Now
+                    </a>
+                </div>
+            </div>
+            
+            <!-- Affiliate Partner Cards -->
+            <a href="https://mydailydefense.com/?ref=SABRINAFAN" target="_blank" class="product-card stagger-animation affiliate-card">
+                <div class="product-content affiliate-content">
+                    <h4>Daily Defense</h4>
+                    <p>Code "SABRINA" for premium Supplements</p>
+                    <div class="affiliate-cta">
+                        <i class="fas fa-external-link-alt"></i>
+                        Visit Site
+                    </div>
+                </div>
+            </a>
+            
+            <a href="https://secure.iherb.com/rewards/rewards-program" target="_blank" class="product-card stagger-animation affiliate-card">
+                <div class="product-content affiliate-content">
+                    <h4>iHerb</h4>
+                    <p>10% off anything</p>
+                    <div class="affiliate-cta">
+                        <i class="fas fa-external-link-alt"></i>
+                        Visit Site
+                    </div>
+                </div>
+            </a>
+            
+            <a href="https://nutricartel.com/?aff=410" target="_blank" class="product-card stagger-animation affiliate-card">
+                <div class="product-content affiliate-content">
+                    <h4>Nutri Cartel</h4>
+                    <p>The BEST place to get all your supps with the best prices and customer service!</p>
+                    <div class="affiliate-cta">
+                        <i class="fas fa-external-link-alt"></i>
+                        Visit Site
+                    </div>
+                </div>
+            </a>
+            
+            <a href="https://drinklmnt.com/?aic=6MBB5WF&utm_campaign=referralcandy_48436_1568064356&utm_source=referral&utm_medium=affiliate&utm_term=6MBB5WF" target="_blank" class="product-card stagger-animation affiliate-card">
+                <div class="product-content affiliate-content">
+                    <h4>LMNT</h4>
+                    <p>Get a FREE sample pack of salty hydration! Their chocolate is the best especially in coffee!</p>
+                    <div class="affiliate-cta">
+                        <i class="fas fa-external-link-alt"></i>
+                        Visit Site
+                    </div>
+                </div>
+            </a>
+        </div>
+        
+        <div class="recommended-disclaimer">
+            <p><i class="fas fa-info-circle"></i> As an affiliate, I may earn a commission from qualifying purchases. These are products and partners I personally use and recommend.</p>
         </div>
     </section>
 
@@ -392,7 +563,7 @@
                 <p class="testimonial-text">"Sabrina changed my life. I've never felt this strong or confident. Her approach is so empowering!"</p>
                 <div class="testimonial-author">
                     <i class="fas fa-user-circle"></i>
-                    <p class="testimonial-name">Sarah</p>
+                    <p class="testimonial-name">Sarah M.</p>
                 </div>
             </div>
             <div class="testimonial-card stagger-animation">
@@ -406,7 +577,7 @@
                 <p class="testimonial-text">"The personalized approach made all the difference. Highly recommend to anyone starting their fitness journey!"</p>
                 <div class="testimonial-author">
                     <i class="fas fa-user-circle"></i>
-                    <p class="testimonial-name">Emma</p>
+                    <p class="testimonial-name">Emma K.</p>
                 </div>
             </div>
             <div class="testimonial-card stagger-animation">
@@ -420,7 +591,49 @@
                 <p class="testimonial-text">"Finally found a program that fits my busy lifestyle. Amazing results in just 3 months!"</p>
                 <div class="testimonial-author">
                     <i class="fas fa-user-circle"></i>
-                    <p class="testimonial-name">Jessica</p>
+                    <p class="testimonial-name">Jessica L.</p>
+                </div>
+            </div>
+            <div class="testimonial-card stagger-animation">
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <p class="testimonial-text">"The financial guidance component was unexpected but incredibly valuable. Sabrina truly cares about your complete well-being."</p>
+                <div class="testimonial-author">
+                    <i class="fas fa-user-circle"></i>
+                    <p class="testimonial-name">Michael R.</p>
+                </div>
+            </div>
+            <div class="testimonial-card stagger-animation">
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <p class="testimonial-text">"I struggled with mental health alongside my fitness goals. Sabrina's integrated approach helped me heal from the inside out."</p>
+                <div class="testimonial-author">
+                    <i class="fas fa-user-circle"></i>
+                    <p class="testimonial-name">Amanda T.</p>
+                </div>
+            </div>
+            <div class="testimonial-card stagger-animation">
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <p class="testimonial-text">"The 24/7 support made all the difference during challenging times. I never felt alone in my journey."</p>
+                <div class="testimonial-author">
+                    <i class="fas fa-user-circle"></i>
+                    <p class="testimonial-name">David C.</p>
                 </div>
             </div>
         </div>
@@ -429,31 +642,78 @@
     <!-- Book Discovery Call Section -->
     <section class="section fade-in" id="discovery">
         <h2 class="section-title fade-in">
-            <i class="fas fa-phone-alt"></i>
+            <i class="fas fa-rocket"></i>
             Ready to Transform Your Life?
         </h2>
         <div class="discovery-call">
-            <div class="discovery-call-container">
-                <div class="discovery-content">
-                    <h3>Book Your Discovery Call</h3>
-                    <p>Take the first step towards your transformation with a personalized discovery call. Together, we'll explore your goals, challenges, and create a roadmap for your success.</p>
+            <div class="discovery-options-container">
+                <div class="discovery-option discovery-call-card fade-in visible">
+                    <div class="option-header">
+                        <div class="option-icon">
+                            <i class="fas fa-phone-alt"></i>
+                        </div>
+                        <h3>Book Discovery Call</h3>
+                        <p class="option-subtitle">Perfect for personalized guidance</p>
+                    </div>
                     
-                    <ul class="discovery-features">
-                        <li>Personalized fitness assessment</li>
-                        <li> Goal-setting and strategy session</li>
-                        <li> Customized nutrition guidance</li>
-                        <li> Accountability and support system</li>
-                        <li> Sustainable lifestyle transformation</li>
-                    </ul>
+                    <div class="option-content">
+                        <p>Get one-on-one time with Sabrina to discuss your goals, challenges, and create a personalized transformation roadmap.</p>
+                        
+                        <ul class="discovery-features">
+                            <li class="visible"> Personalized fitness assessment</li>
+                            <li class="visible">Goal-setting strategy session</li>
+                            <li class="visible"> Customized nutrition guidance</li>
+                            <li class="visible">Direct access to Sabrina</li>
+                        </ul>
+                        
+                        <div class="option-highlight">
+                            <i class="fas fa-clock"></i>
+                            <span>30-minute consultation</span>
+                        </div>
+                    </div>
                     
-                    <a href="https://calendly.com/sabrinafan/1st-time-consult?back=1&month=2025-07" target="_blank" class="discovery-cta">
+                    <a href="https://calendly.com/sabrinafan/1st-time-consult?back=1&month=2025-07" target="_blank" class="discovery-cta call-cta">
                         <i class="fas fa-calendar-alt"></i>
-                        <span>Book Your Call</span>
+                        <span>Schedule Call</span>
                     </a>
                 </div>
                 
-                <div class="discovery-image">
-                    <img src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Fitness consultation" loading="lazy">
+                <div class="discovery-option application-form-card fade-in visible">
+                    <div class="option-header">
+                        <div class="option-icon">
+                            <i class="fas fa-file-alt"></i>
+                        </div>
+                        <h3>Application Form</h3>
+                        <p class="option-subtitle">Quick start with detailed assessment</p>
+                    </div>
+                    
+                    <div class="option-content">
+                        <p>Complete our comprehensive application to help us understand your needs and fast-track your transformation journey.</p>
+                        
+                        <ul class="discovery-features">
+                            <li class="visible"> Detailed health & fitness assessment</li>
+                            <li class="visible"> Lifestyle & goal evaluation</li>
+                            <li class="visible"> Priority program matching</li>
+                            <li class="visible"> Faster onboarding process</li>
+                        </ul>
+                        
+                        <div class="option-highlight">
+                            <i class="fas fa-bolt"></i>
+                            <span>Get started immediately</span>
+                        </div>
+                    </div>
+                    
+                    <a href="https://form.jotform.com/240514134346145" target="_blank" class="discovery-cta form-cta">
+                        <i class="fas fa-edit"></i>
+                        <span>Fill Application</span>
+                    </a>
+                </div>
+            </div>
+            
+            <div class="discovery-bottom-note">
+                <div class="note-content">
+                    <i class="fas fa-info-circle"></i>
+                    <p>Both options lead to the same personalized Iron Butterfly experience. Choose what works best for your schedule!</p>
                 </div>
             </div>
         </div>
@@ -546,20 +806,6 @@
                     </div>
                 </div>
                 
-                <div class="footer-section">
-                    <h4><i class="fas fa-envelope"></i> Stay Connected</h4>
-                    <p>Get transformation tips and exclusive content</p>
-                    <div class="newsletter">
-                        <div class="newsletter-input">
-                            <i class="fas fa-envelope"></i>
-                            <input type="email" placeholder="Enter your email">
-                        </div>
-                        <button type="submit">
-                            <i class="fas fa-paper-plane"></i>
-                            Subscribe
-                        </button>
-                    </div>
-                </div>
             </div>
             
             <div class="footer-bottom">
@@ -722,7 +968,7 @@
                     entry.target.classList.add('visible');
                     
                     // Stagger animation for child elements
-                    if (entry.target.classList.contains('testimonials-grid')) {
+                    if (entry.target.classList.contains('testimonials-grid') || entry.target.classList.contains('products-grid')) {
                         const cards = entry.target.querySelectorAll('.stagger-animation');
                         cards.forEach((card, index) => {
                             setTimeout(() => {
@@ -731,29 +977,7 @@
                         });
                     }
                     
-                    // Special handling for discovery call section
-                    if (entry.target.classList.contains('discovery-call')) {
-                        const content = entry.target.querySelector('.discovery-content');
-                        const image = entry.target.querySelector('.discovery-image');
-                        const features = entry.target.querySelectorAll('.discovery-features li');
-                        
-                        // Animate content first
-                        setTimeout(() => {
-                            if (content) content.classList.add('visible');
-                        }, 200);
-                        
-                        // Then animate image
-                        setTimeout(() => {
-                            if (image) image.classList.add('visible');
-                        }, 400);
-                        
-                        // Finally animate features with stagger
-                        features.forEach((feature, index) => {
-                            setTimeout(() => {
-                                feature.classList.add('visible');
-                            }, 600 + (index * 150));
-                        });
-                    }
+
                     
                     // Special handling for accordion items
                     if (entry.target.classList.contains('process-accordion') || 
@@ -783,7 +1007,7 @@
         }
 
         // Observe parent containers for staggered animations
-        document.querySelectorAll('.testimonials-grid, .process-accordion, .faq, .health-categories, .comparison, .discovery-call').forEach(el => {
+        document.querySelectorAll('.testimonials-grid, .process-accordion, .faq, .health-categories, .comparison, .discovery-call, .products-grid').forEach(el => {
             observer.observe(el);
         });
 
@@ -980,6 +1204,160 @@
             window.addEventListener('orientationchange', setVH);
             
         })();
+
+        // Gallery animation functionality (simplified without filtering)
+        function initGalleryAnimation() {
+            const galleryItems = document.querySelectorAll('.gallery-item');
+            
+            // Initialize all items with stagger animation
+            galleryItems.forEach((item, index) => {
+                item.classList.add('stagger-animation');
+                setTimeout(() => {
+                    item.classList.add('visible');
+                }, index * 150);
+            });
+        }
+        
+        // Initialize gallery when DOM is loaded
+        document.addEventListener('DOMContentLoaded', function() {
+            initGalleryAnimation();
+        });
+        
+        // Gallery lightbox functionality (optional enhancement)
+        function initGalleryLightbox() {
+            const galleryItems = document.querySelectorAll('.gallery-item');
+            
+            galleryItems.forEach(item => {
+                item.addEventListener('click', function() {
+                    const img = this.querySelector('img');
+                    const title = this.querySelector('.gallery-content h4').textContent;
+                    const description = this.querySelector('.gallery-content p').textContent;
+                    
+                    // Create lightbox overlay
+                    const lightbox = document.createElement('div');
+                    lightbox.className = 'gallery-lightbox';
+                    lightbox.innerHTML = `
+                        <div class="lightbox-content">
+                            <button class="lightbox-close">&times;</button>
+                            <img src="${img.src}" alt="${img.alt}">
+                            <div class="lightbox-info">
+                                <h4>${title}</h4>
+                                <p>${description}</p>
+                            </div>
+                        </div>
+                    `;
+                    
+                    document.body.appendChild(lightbox);
+                    document.body.style.overflow = 'hidden';
+                    
+                    // Close lightbox functionality
+                    const closeBtn = lightbox.querySelector('.lightbox-close');
+                    closeBtn.addEventListener('click', closeLightbox);
+                    lightbox.addEventListener('click', function(e) {
+                        if (e.target === lightbox) {
+                            closeLightbox();
+                        }
+                    });
+                    
+                    function closeLightbox() {
+                        lightbox.remove();
+                        document.body.style.overflow = '';
+                    }
+                    
+                    // Close on escape key
+                    document.addEventListener('keydown', function(e) {
+                        if (e.key === 'Escape') {
+                            closeLightbox();
+                        }
+                    });
+                });
+            });
+        }
+        
+        // Initialize lightbox
+        document.addEventListener('DOMContentLoaded', function() {
+            initGalleryLightbox();
+        });
+        
+        // Recommended Products Animation
+        function initRecommendedProducts() {
+            const productCards = document.querySelectorAll('.product-card');
+            
+            // Add stagger animation class to all product cards
+            productCards.forEach(card => {
+                card.classList.add('stagger-animation');
+            });
+            
+            // Enhanced hover effects for product cards
+            productCards.forEach(card => {
+                card.addEventListener('mouseenter', function() {
+                    this.style.transform = 'translateY(-15px) scale(1.02)';
+                    this.style.boxShadow = '0 25px 50px rgba(212, 175, 55, 0.2)';
+                });
+                
+                card.addEventListener('mouseleave', function() {
+                    this.style.transform = '';
+                    this.style.boxShadow = '';
+                });
+                
+                // Add click animation
+                card.addEventListener('click', function(e) {
+                    if (!e.target.closest('.product-button')) {
+                        this.style.transform = 'scale(0.98)';
+                        setTimeout(() => {
+                            this.style.transform = '';
+                        }, 150);
+                    }
+                });
+            });
+            
+            // Enhanced button interactions
+            const productButtons = document.querySelectorAll('.product-button');
+            productButtons.forEach(button => {
+                button.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    
+                    // Add ripple effect
+                    const ripple = document.createElement('span');
+                    ripple.style.position = 'absolute';
+                    ripple.style.borderRadius = '50%';
+                    ripple.style.background = 'rgba(255, 255, 255, 0.6)';
+                    ripple.style.transform = 'scale(0)';
+                    ripple.style.animation = 'ripple 0.6s linear';
+                    ripple.style.left = '50%';
+                    ripple.style.top = '50%';
+                    ripple.style.width = '20px';
+                    ripple.style.height = '20px';
+                    ripple.style.marginLeft = '-10px';
+                    ripple.style.marginTop = '-10px';
+                    
+                    this.appendChild(ripple);
+                    
+                    setTimeout(() => {
+                        ripple.remove();
+                        // Simulate opening affiliate link
+                        window.open(this.href, '_blank');
+                    }, 600);
+                });
+            });
+        }
+        
+        // Initialize recommended products when DOM is loaded
+        document.addEventListener('DOMContentLoaded', function() {
+            initRecommendedProducts();
+        });
+        
+        // Add ripple animation keyframes
+         const style = document.createElement('style');
+         style.textContent = `
+             @keyframes ripple {
+                 to {
+                     transform: scale(4);
+                     opacity: 0;
+                 }
+             }
+         `;
+         document.head.appendChild(style);
 
         // Newsletter form enhancement
         const newsletterForm = document.querySelector('.newsletter');
