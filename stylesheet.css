@@ -19,6 +19,7 @@ body {
 @font-face {
     font-family: 'Inter';
     font-display: swap;
+    src: url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
 }
 
 /* Icon Loading Optimization */
@@ -42,7 +43,6 @@ body {
 
 /* Lazy loading for images */
 img {
-    loading: lazy;
     transition: opacity 0.3s ease;
 }
 
