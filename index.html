@@ -10,6 +10,68 @@
     <link rel="stylesheet" href="stylesheet.css">
 </head>
 <body>
+    <!-- Welcome Popup -->
+    <div class="popup-overlay" id="welcomePopup">
+        <div class="popup-container">
+            <button class="popup-close" id="closePopup">
+                <i class="fas fa-times"></i>
+            </button>
+            <div class="popup-content">
+                <div class="popup-header">
+                    <div class="popup-icon">
+                        <i class="fas fa-gift"></i>
+                    </div>
+                    <h2>Welcome to Iron Butterfly Coaching!</h2>
+                    <p class="popup-subtitle">Transform Your Health & Life Today</p>
+                </div>
+                
+                <div class="popup-body">
+                    <div class="popup-image">
+                        <img src="images/PFP.jpg" alt="Sabrina Fan - Health Coach" onerror="this.src='https://via.placeholder.com/200x200/E8F4FD/2563EB?text=Sabrina'">
+                    </div>
+                    
+                    <div class="popup-text">
+                        <h3>🎯 Special Offer Inside!</h3>
+                        <p>Discover our exclusive health transformation programs and recommended products to kickstart your wellness journey.</p>
+                        
+                        <div class="popup-benefits">
+                            <div class="benefit-item">
+                                <i class="fas fa-check-circle"></i>
+                                <span>50% OFF E-book</span>
+                            </div>
+                            <div class="benefit-item">
+                                <i class="fas fa-check-circle"></i>
+                                <span>Free Sample Pack</span>
+                            </div>
+                            <div class="benefit-item">
+                                <i class="fas fa-check-circle"></i>
+                                <span>Exclusive Partner Discounts</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="popup-actions">
+                    <button class="popup-btn primary" id="claimOfferBtn">
+                        <i class="fas fa-shopping-cart"></i>
+                        <span>Claim Offer Now</span>
+                    </button>
+                    <button class="popup-btn secondary" id="learnMoreBtn">
+                        <i class="fas fa-star"></i>
+                        <span>Learn More About Peptides</span>
+                    </button>
+                </div>
+                
+                <div class="popup-footer">
+                    <p><i class="fas fa-clock"></i> Limited time offer - Don't miss out!</p>
+                    <p class="ebook-link">
+                        Or get our <a href="#ebook-signup" id="freeEbookLink">FREE Health Transformation E-book</a> 📚
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <!-- Navbar -->
     <nav class="navbar" id="navbar">
         <div class="nav-container">
@@ -19,10 +81,11 @@
             </a>
             <ul class="nav-links">
                 <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
+                <li><a href="about.html">About</a></li>
                 <li><a href="#process">Process</a></li>
                 <li><a href="#gallery">Gallery</a></li>
                 <li><a href="#testimonials">Testimonials</a></li>
+                <li><a href="#social">Connect</a></li>
                 <li><a href="#discovery">Discovery</a></li>
             </ul>
             <div class="mobile-menu-toggle" id="mobile-menu-toggle">
@@ -38,10 +101,11 @@
     <nav class="mobile-nav" id="mobile-nav">
         <ul class="mobile-nav-links">
             <li><a href="#home"><i class="fas fa-home"></i> Home</a></li>
-            <li><a href="#about"><i class="fas fa-user"></i> About</a></li>
+            <li><a href="about.html"><i class="fas fa-user"></i> About</a></li>
             <li><a href="#process"><i class="fas fa-cogs"></i> Process</a></li>
             <li><a href="#gallery"><i class="fas fa-images"></i> Gallery</a></li>
             <li><a href="#testimonials"><i class="fas fa-star"></i> Testimonials</a></li>
+            <li><a href="#social"><i class="fas fa-share-alt"></i> Connect</a></li>
             <li><a href="#discovery"><i class="fas fa-envelope"></i> Discovery</a></li>
         </ul>
     </nav>
@@ -70,26 +134,18 @@
             <div class="two-column">
                 <div class="about-content slide-in-left">
                     <h3>Your Complete Health Transformation Partner</h3>
-                    <p>Welcome! I'm Sabrina, founder of Iron Butterfly Coaching - where transformation meets empowerment. I specialize in creating personalized health protocols that address not just your physical wellness, but your financial optimization and lifestyle transformation as well.</p>
+                    <p>Welcome! I'm Sabrina, founder of Iron Butterfly Coaching - where transformation meets empowerment. I specialize in creating personalized health protocols that address not just your physical wellness, but your financial optimization and lifestyle transformation as well. My comprehensive approach ensures you achieve lasting results in all areas of your life.</p>
                     
-                    <div class="credentials">
-                        <h4><i class="fas fa-certificate"></i> Credentials & Expertise</h4>
-                        <ul>
-                            <li><i class="fas fa-check"></i> Certified Health & Wellness Coach</li>
-                            <li><i class="fas fa-check"></i> Functional Nutrition Specialist</li>
-                            <li><i class="fas fa-check"></i> Financial Wellness Consultant</li>
-                            <li><i class="fas fa-check"></i> Lifestyle Transformation Expert</li>
-                            <li><i class="fas fa-check"></i> 10+ Years of Client Success Stories</li>
-                        </ul>
-                    </div>
-                    
-                    <div class="philosophy">
-                        <h4><i class="fas fa-lightbulb"></i> My Approach</h4>
-                        <p>True transformation happens when we address all aspects of your life - health, wealth, and mindset. My comprehensive approach ensures you not only achieve your health goals but also optimize your finances and create sustainable lifestyle changes that last.</p>
+                    <div class="about-cta">
+                        <a href="about.html" class="about-btn">
+                            <i class="fas fa-user-circle"></i>
+                            <span>Know More About Me</span>
+                            <i class="fas fa-arrow-right"></i>
+                        </a>
                     </div>
                 </div>
                 <div class="about-image slide-in-right">
-                    <img src="images/PFP.jpg" alt="Sabrina Fan - Health & Transformation Coach" onerror="this.src='https://via.placeholder.com/500x600/E8F4FD/2563EB?text=About+Sabrina'">
+                    <img src="images/drive-download-20250806T065301Z-1-001/pic3.jpeg" alt="Sabrina Fan - Health & Transformation Coach" onerror="this.src='https://via.placeholder.com/500x600/E8F4FD/2563EB?text=About+Sabrina'">
                 </div>
             </div>
         </div>
@@ -105,23 +161,7 @@
             <div class="process-container">
                 <div class="process-image slide-in-left">
                     <div class="image-wrapper">
-                        <img src="images/about.jpg" alt="Transformation Process" onerror="this.src='https://via.placeholder.com/500x600/E8F4FD/2563EB?text=Process'">
-                        <div class="process-overlay">
-                            <div class="overlay-stats">
-                                <div class="stat-item">
-                                    <div class="stat-number">100%</div>
-                                    <div class="stat-label">Success Rate</div>
-                                </div>
-                                <div class="stat-item">
-                                    <div class="stat-number">24/7</div>
-                                    <div class="stat-label">Support</div>
-                                </div>
-                                <div class="stat-item">
-                                    <div class="stat-number">∞</div>
-                                    <div class="stat-label">Potential</div>
-                                </div>
-                            </div>
-                        </div>
+                        <img src="images/drive-download-20250806T065301Z-1-001/pic6.jpeg" alt="Transformation Process" onerror="this.src='https://via.placeholder.com/500x600/E8F4FD/2563EB?text=Process'">
                     </div>
                 </div>
                 <div class="process-content slide-in-right">
@@ -282,13 +322,42 @@
             </div>
             
             <div class="pricing-grid">
-                <!-- Fitness Coaching Plan -->
+                <!-- Group Challenge Plan -->
                 <div class="pricing-card basic">
                     <div class="card-header">
                         <div class="plan-icon">
-                            <i class="fas fa-dumbbell"></i>
+                            <i class="fas fa-users"></i>
                         </div>
-                        <h4>Fitness Coaching</h4>
+                        <h4>Group Challenge</h4>
+                        <div class="price">
+                            <span class="currency">$</span>
+                            <span class="amount">99</span>
+                            <span class="period">/month</span>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <ul class="features">
+                            <li><i class="fas fa-check"></i> Exclusive VIP group access</li>
+                            <li><i class="fas fa-check"></i> Group challenges and motivation</li>
+                            <li><i class="fas fa-check"></i> Community support network</li>
+                            <li><i class="fas fa-check"></i> Basic workout guidance</li>
+                            <li><i class="fas fa-check"></i> Monthly group sessions</li>
+                        </ul>
+                        <a href="#discovery" class="plan-button">
+                            <i class="fas fa-arrow-right"></i>
+                            Join Challenge
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Holistic Health Plan -->
+                <div class="pricing-card premium">
+                    <div class="popular-badge">Most Popular</div>
+                    <div class="card-header">
+                        <div class="plan-icon">
+                            <i class="fas fa-leaf"></i>
+                        </div>
+                        <h4>Holistic Health & Functional Medicine</h4>
                         <div class="price">
                             <span class="currency">$</span>
                             <span class="amount">149</span>
@@ -297,26 +366,26 @@
                     </div>
                     <div class="card-body">
                         <ul class="features">
-                            <li><i class="fas fa-check"></i> Personalized workout plans</li>
-                            <li><i class="fas fa-check"></i> Nutrition guidance</li>
-                            <li><i class="fas fa-check"></i> Weekly check-ins</li>
-                            <li><i class="fas fa-check"></i> Progress tracking</li>
+                            <li><i class="fas fa-check"></i> Functional medicine consultation</li>
+                            <li><i class="fas fa-check"></i> Supplement stack clean up</li>
+                            <li><i class="fas fa-check"></i> Personalized health protocols</li>
+                            <li><i class="fas fa-check"></i> Root cause analysis</li>
+                            <li><i class="fas fa-check"></i> Monthly wellness check-ins</li>
                         </ul>
                         <a href="#discovery" class="plan-button">
-                            <i class="fas fa-arrow-right"></i>
-                            Get Started
+                            <i class="fas fa-rocket"></i>
+                            Start Healing
                         </a>
                     </div>
                 </div>
 
-                <!-- Monthly Check-in Plan -->
-                <div class="pricing-card premium">
-                    <div class="popular-badge">Most Popular</div>
+                <!-- Biweekly Check-ins Plan -->
+                <div class="pricing-card elite">
                     <div class="card-header">
                         <div class="plan-icon">
-                            <i class="fas fa-calendar-check"></i>
+                            <i class="fas fa-calendar-alt"></i>
                         </div>
-                        <h4>Monthly Check-in</h4>
+                        <h4>Biweekly Check-ins</h4>
                         <div class="price">
                             <span class="currency">$</span>
                             <span class="amount">249</span>
@@ -325,44 +394,16 @@
                     </div>
                     <div class="card-body">
                         <ul class="features">
-                            <li><i class="fas fa-check"></i> Everything in Fitness Coaching</li>
-                            <li><i class="fas fa-check"></i> Monthly wellness coaching</li>
-                            <li><i class="fas fa-check"></i> Supplement recommendations</li>
-                            <li><i class="fas fa-check"></i> Lifestyle optimization</li>
-                            <li><i class="fas fa-check"></i> Direct access to Sabrina</li>
-                        </ul>
-                        <a href="#discovery" class="plan-button">
-                            <i class="fas fa-rocket"></i>
-                            Start Transformation
-                        </a>
-                    </div>
-                </div>
-
-                <!-- All Inclusive Plan -->
-                <div class="pricing-card elite">
-                    <div class="card-header">
-                        <div class="plan-icon">
-                            <i class="fas fa-crown"></i>
-                        </div>
-                        <h4>All Inclusive Biohacking</h4>
-                        <div class="price">
-                            <span class="currency">$</span>
-                            <span class="amount">499</span>
-                            <span class="period">/month</span>
-                        </div>
-                    </div>
-                    <div class="card-body">
-                        <ul class="features">
-                            <li><i class="fas fa-check"></i> Everything in Monthly Check-in</li>
-                            <li><i class="fas fa-check"></i> Complete supplement protocols</li>
-                            <li><i class="fas fa-check"></i> Advanced biohacking strategies</li>
-                            <li><i class="fas fa-check"></i> Functional medicine approach</li>
-                            <li><i class="fas fa-check"></i> Mindset & lifestyle coaching</li>
-                            <li><i class="fas fa-check"></i> Priority support & access</li>
+                            <li><i class="fas fa-check"></i> Everything in Holistic Health</li>
+                            <li><i class="fas fa-check"></i> Biweekly personal check-ins</li>
+                            <li><i class="fas fa-check"></i> Advanced supplement protocols</li>
+                            <li><i class="fas fa-check"></i> Personalized content & guidance</li>
+                            <li><i class="fas fa-check"></i> Exclusive discounts on peptides</li>
+                            <li><i class="fas fa-check"></i> Priority support access</li>
                         </ul>
                         <a href="#discovery" class="plan-button">
                             <i class="fas fa-star"></i>
-                            Go Elite
+                            Get Premium Support
                         </a>
                     </div>
                 </div>
@@ -531,84 +572,86 @@
         </h2>
         <p class="gallery-subtitle">Witness the Iron Butterfly transformations - from healing journeys to athletic achievements</p>
         
-        <div class="gallery-grid">
-            <div class="gallery-item stagger-animation">
-                <div class="gallery-image">
-                    <img src="images/transform1.jpg" alt="Client Transformation 1" onerror="this.src='https://via.placeholder.com/400x300/E8F4FD/2563EB?text=Transformation+1'">
-                    <div class="gallery-overlay">
-                        <div class="gallery-content">
-                            <h4>Incredible Transformation</h4>
-                            <p>From struggle to strength</p>
-                            <i class="fas fa-search-plus"></i>
-                        </div>
+        <div class="polaroid-gallery">
+            <div class="polaroid-item stagger-animation">
+                <div class="polaroid-frame">
+                    <div class="polaroid-photo">
+                        <img src="images/drive-download-20250806T065301Z-1-001/pic1.JPEG" alt="Transformation Journey 1" onerror="this.src='https://via.placeholder.com/300x400/E8F4FD/2563EB?text=Transformation+1'">
+                    </div>
+                    <div class="polaroid-caption">
+                        <h4>Incredible Transformation</h4>
+                        <p>From struggle to strength</p>
                     </div>
                 </div>
             </div>
             
-            <div class="gallery-item stagger-animation">
-                <div class="gallery-image">
-                    <img src="images/transform2.jpg" alt="Client Transformation 2" onerror="this.src='https://via.placeholder.com/400x300/E8F4FD/2563EB?text=Transformation+2'">
-                    <div class="gallery-overlay">
-                        <div class="gallery-content">
-                            <h4>Life-Changing Journey</h4>
-                            <p>Mind, body, and spirit transformation</p>
-                            <i class="fas fa-search-plus"></i>
-                        </div>
+            <div class="polaroid-item stagger-animation">
+                <div class="polaroid-frame">
+                    <div class="polaroid-photo">
+                        <img src="images/drive-download-20250806T065301Z-1-001/pic2.jpeg" alt="Transformation Journey 2" onerror="this.src='https://via.placeholder.com/300x400/E8F4FD/2563EB?text=Transformation+2'">
+                    </div>
+                    <div class="polaroid-caption">
+                        <h4>Life-Changing Journey</h4>
+                        <p>Mind, body, and spirit transformation</p>
                     </div>
                 </div>
             </div>
             
-            <div class="gallery-item stagger-animation">
-                <div class="gallery-image">
-                    <img src="images/transform3.jpg" alt="Client Transformation 3" onerror="this.src='https://via.placeholder.com/400x300/E8F4FD/2563EB?text=Transformation+3'">
-                    <div class="gallery-overlay">
-                        <div class="gallery-content">
-                            <h4>Empowered & Strong</h4>
-                            <p>Discovering inner strength</p>
-                            <i class="fas fa-search-plus"></i>
-                        </div>
+            <div class="polaroid-item stagger-animation mobile-hidden">
+                <div class="polaroid-frame">
+                    <div class="polaroid-photo">
+                        <img src="images/drive-download-20250806T065301Z-1-001/pic3.jpeg" alt="Transformation Journey 3" onerror="this.src='https://via.placeholder.com/300x400/E8F4FD/2563EB?text=Transformation+3'">
+                    </div>
+                    <div class="polaroid-caption">
+                        <h4>Empowered & Strong</h4>
+                        <p>Discovering inner strength</p>
                     </div>
                 </div>
             </div>
             
-            <div class="gallery-item stagger-animation">
-                <div class="gallery-image">
-                    <img src="images/transform4.jpg" alt="Client Transformation 4" onerror="this.src='https://via.placeholder.com/400x300/E8F4FD/2563EB?text=Transformation+4'">
-                    <div class="gallery-overlay">
-                        <div class="gallery-content">
-                            <h4>Complete Wellness</h4>
-                            <p>Holistic health transformation</p>
-                            <i class="fas fa-search-plus"></i>
-                        </div>
+            <div class="polaroid-item stagger-animation mobile-hidden">
+                <div class="polaroid-frame">
+                    <div class="polaroid-photo">
+                        <img src="images/drive-download-20250806T065301Z-1-001/pic4.jpeg" alt="Transformation Journey 4" onerror="this.src='https://via.placeholder.com/300x400/E8F4FD/2563EB?text=Transformation+4'">
+                    </div>
+                    <div class="polaroid-caption">
+                        <h4>Complete Wellness</h4>
+                        <p>Holistic health transformation</p>
                     </div>
                 </div>
             </div>
             
-            <div class="gallery-item stagger-animation">
-                <div class="gallery-image">
-                    <img src="images/transform5.jpg" alt="Client Transformation 5" onerror="this.src='https://via.placeholder.com/400x300/E8F4FD/2563EB?text=Transformation+5'">
-                    <div class="gallery-overlay">
-                        <div class="gallery-content">
-                            <h4>Athletic Achievement</h4>
-                            <p>Peak performance unlocked</p>
-                            <i class="fas fa-search-plus"></i>
-                        </div>
+            <div class="polaroid-item stagger-animation mobile-hidden">
+                <div class="polaroid-frame">
+                    <div class="polaroid-photo">
+                        <img src="images/drive-download-20250806T065301Z-1-001/pic5.jpeg" alt="Transformation Journey 5" onerror="this.src='https://via.placeholder.com/300x400/E8F4FD/2563EB?text=Transformation+5'">
+                    </div>
+                    <div class="polaroid-caption">
+                        <h4>Athletic Achievement</h4>
+                        <p>Peak performance unlocked</p>
                     </div>
                 </div>
             </div>
             
-            <div class="gallery-item stagger-animation">
-                <div class="gallery-image">
-                    <img src="images/about.jpg" alt="Client Transformation 6" onerror="this.src='https://via.placeholder.com/400x300/E8F4FD/2563EB?text=Transformation+6'">
-                    <div class="gallery-overlay">
-                        <div class="gallery-content">
-                            <h4>Confidence Restored</h4>
-                            <p>Embracing a new lifestyle</p>
-                            <i class="fas fa-search-plus"></i>
-                        </div>
+            <div class="polaroid-item stagger-animation mobile-hidden">
+                <div class="polaroid-frame">
+                    <div class="polaroid-photo">
+                        <img src="images/drive-download-20250806T065301Z-1-001/pic6.jpeg" alt="Transformation Journey 6" onerror="this.src='https://via.placeholder.com/300x400/E8F4FD/2563EB?text=Transformation+6'">
+                    </div>
+                    <div class="polaroid-caption">
+                        <h4>Confidence Restored</h4>
+                        <p>Embracing a new lifestyle</p>
                     </div>
                 </div>
             </div>
+        </div>
+        
+        <!-- Mobile View More Button -->
+        <div class="mobile-view-more" id="mobile-view-more">
+            <button class="view-more-btn" onclick="toggleGalleryView()">
+                <i class="fas fa-images"></i>
+                <span class="view-more-text">View More Photos</span>
+            </button>
         </div>
         
         <div class="gallery-cta">
@@ -761,7 +804,7 @@
                 <p class="testimonial-text">Sabrina changed my life. I've never felt this strong or confident. Her approach is so empowering!</p>
                 <div class="testimonial-author">
                     <div class="author-avatar">
-                        <img src="https://via.placeholder.com/60x60/2563eb/ffffff?text=SM" alt="Sarah M." onerror="this.style.display='none'">
+                        <i class="fas fa-user"></i>
                     </div>
                     <div class="author-info">
                         <p class="testimonial-name">Sarah Johnson</p>
@@ -781,7 +824,7 @@
                 <p class="testimonial-text">Iron Butterfly's holistic approach completely changed my relationship with health. The biohacking strategies are game-changing!</p>
                 <div class="testimonial-author">
                     <div class="author-avatar">
-                        <img src="https://via.placeholder.com/60x60/2563eb/ffffff?text=MC" alt="Mike Chen" onerror="this.style.display='none'">
+                        <i class="fas fa-user"></i>
                     </div>
                     <div class="author-info">
                         <p class="testimonial-name">Mike Chen</p>
@@ -801,7 +844,7 @@
                 <p class="testimonial-text">The peptide guidance and personalized protocols have optimized my recovery and performance beyond what I thought possible.</p>
                 <div class="testimonial-author">
                     <div class="author-avatar">
-                        <img src="https://via.placeholder.com/60x60/2563eb/ffffff?text=ED" alt="Emma Davis" onerror="this.style.display='none'">
+                        <i class="fas fa-user"></i>
                     </div>
                     <div class="author-info">
                         <p class="testimonial-name">Emma Davis</p>
@@ -821,7 +864,7 @@
                 <p class="testimonial-text">The financial guidance component was unexpected but incredibly valuable. Sabrina truly cares about your complete well-being.</p>
                 <div class="testimonial-author">
                     <div class="author-avatar">
-                        <img src="https://via.placeholder.com/60x60/2563eb/ffffff?text=MR" alt="Michael R." onerror="this.style.display='none'">
+                        <i class="fas fa-user"></i>
                     </div>
                     <div class="author-info">
                         <p class="testimonial-name">Michael Rodriguez</p>
@@ -841,7 +884,7 @@
                 <p class="testimonial-text">I struggled with mental health alongside my fitness goals. Sabrina's integrated approach helped me heal from the inside out.</p>
                 <div class="testimonial-author">
                     <div class="author-avatar">
-                        <img src="https://via.placeholder.com/60x60/2563eb/ffffff?text=AT" alt="Amanda T." onerror="this.style.display='none'">
+                        <i class="fas fa-user"></i>
                     </div>
                     <div class="author-info">
                         <p class="testimonial-name">Amanda Thompson</p>
@@ -861,7 +904,7 @@
                 <p class="testimonial-text">The 24/7 support made all the difference during challenging times. I never felt alone in my journey.</p>
                 <div class="testimonial-author">
                     <div class="author-avatar">
-                        <img src="https://via.placeholder.com/60x60/2563eb/ffffff?text=DC" alt="David C." onerror="this.style.display='none'">
+                        <i class="fas fa-user"></i>
                     </div>
                     <div class="author-info">
                         <p class="testimonial-name">David Carter</p>
@@ -952,6 +995,90 @@
         </div>
     </section>
 
+    <!-- Social Media Section -->
+    <section class="section social-media fade-in" id="social">
+        <div class="container">
+            <h2 class="section-title fade-in">
+                <i class="fas fa-share-alt"></i>
+                Connect With Me
+            </h2>
+            <div class="social-container">
+                <div class="qr-section slide-in-left">
+                    <div class="qr-wrapper">
+                        <img src="images/drive-download-20250806T065301Z-1-001/My_QR_Code_1-1024.JPEG" alt="QR Code - All My Links" class="qr-code">
+                        <h3>Scan for All Links</h3>
+                        <p>Quick access to all my social media and resources</p>
+                    </div>
+                </div>
+                <div class="social-links-section slide-in-right">
+                    <h3>Follow My Journey</h3>
+                    <div class="social-links-grid">
+                        <a href="https://www.instagram.com/sabrinafan.fitness" target="_blank" class="social-link instagram">
+                            <div class="social-icon">
+                                <i class="fab fa-instagram"></i>
+                            </div>
+                            <div class="social-content">
+                                <h4>Instagram</h4>
+                                <p>My personal Instagram, follow @ironbutterflycoaching for supplement reviews, advice, and breakdowns!</p>
+                            </div>
+                            <i class="fas fa-arrow-right"></i>
+                        </a>
+                        <a href="https://chat.whatsapp.com/GRiYF7xOQfyEVPTvY7zZGb?mode=ac_t" target="_blank" class="social-link whatsapp">
+                            <div class="social-icon">
+                                <i class="fab fa-whatsapp"></i>
+                            </div>
+                            <div class="social-content">
+                                <h4>WhatsApp</h4>
+                                <p>Join my biohacking & peptide group + access to VIP prices !</p>
+                            </div>
+                            <i class="fas fa-arrow-right"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/in/sabrinafan" target="_blank" class="social-link linkedin">
+                            <div class="social-icon">
+                                <i class="fab fa-linkedin"></i>
+                            </div>
+                            <div class="social-content">
+                                <h4>LinkedIn</h4>
+                                <p>My LinkedIn!</p>
+                            </div>
+                            <i class="fas fa-arrow-right"></i>
+                        </a>
+                        <a href="https://www.facebook.com/sabrinafan137?mibextid=wwXIfr" target="_blank" class="social-link facebook">
+                            <div class="social-icon">
+                                <i class="fab fa-facebook"></i>
+                            </div>
+                            <div class="social-content">
+                                <h4>Facebook</h4>
+                                <p>My Facebook!</p>
+                            </div>
+                            <i class="fas fa-arrow-right"></i>
+                        </a>
+                        <a href="https://www.tiktok.com/@sabrinafan137?_t=ZP-8yTZlRJFBt9&_r=1" target="_blank" class="social-link tiktok">
+                            <div class="social-icon">
+                                <i class="fab fa-tiktok"></i>
+                            </div>
+                            <div class="social-content">
+                                <h4>TikTok</h4>
+                                <p>Fun TikTok reviews</p>
+                            </div>
+                            <i class="fas fa-arrow-right"></i>
+                        </a>
+                        <a href="https://venmo.com/u/sabrinafan137" target="_blank" class="social-link vimeo">
+                            <div class="social-icon">
+                                <i class="fab fa-vimeo"></i>
+                            </div>
+                            <div class="social-content">
+                                <h4>Vimeo</h4>
+                                <p>Support me and my mission + nonprofits! Venmo</p>
+                            </div>
+                            <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- FAQ Section -->
     <section class="section fade-in" id="faq">
         <h2 class="section-title fade-in">
@@ -993,6 +1120,81 @@
                 </div>
                 <div class="accordion-content">
                     <p>Yes, there's no long-term commitment. You can cancel your subscription at any time with no penalties.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Free Ebook Email Signup Section -->
+    <section class="section ebook-signup fade-in" id="ebook-signup">
+        <div class="ebook-container">
+            <div class="ebook-content">
+                <div class="ebook-header slide-in-left">
+                    <div class="ebook-icon">
+                        <i class="fas fa-book-open"></i>
+                    </div>
+                    <h2>Get Your <span class="gradient-text">FREE</span> Health Transformation E-book</h2>
+                    <p class="ebook-subtitle">"The Iron Butterfly Method: 7 Steps to Complete Health Transformation"</p>
+                </div>
+                
+                <div class="ebook-preview slide-in-right">
+                    <div class="ebook-cover">
+                        <div class="ebook-mockup">
+                            <i class="fas fa-book"></i>
+                            <span>FREE E-BOOK</span>
+                        </div>
+                    </div>
+                    
+                    <div class="ebook-benefits">
+                        <h3>What You'll Learn:</h3>
+                        <ul class="benefits-list">
+                            <li><i class="fas fa-check-circle"></i> Functional medicine fundamentals</li>
+                            <li><i class="fas fa-check-circle"></i> Biohacking techniques for beginners</li>
+                            <li><i class="fas fa-check-circle"></i> Supplement optimization guide</li>
+                            <li><i class="fas fa-check-circle"></i> Mindset transformation strategies</li>
+                            <li><i class="fas fa-check-circle"></i> Financial wellness integration</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="ebook-signup-form fade-in">
+                <div class="form-container">
+                    <h3><i class="fas fa-gift"></i> Download Your Free Copy Now!</h3>
+                    <p>Join 1000+ people who have transformed their health with our proven methods.</p>
+                    
+                    <form class="email-form" id="ebookSignupForm">
+                        <div class="form-group">
+                            <div class="input-wrapper">
+                                <i class="fas fa-user"></i>
+                                <input type="text" id="firstName" name="firstName" placeholder="First Name" required>
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <div class="input-wrapper">
+                                <i class="fas fa-envelope"></i>
+                                <input type="email" id="email" name="email" placeholder="Your Email Address" required>
+                            </div>
+                        </div>
+                        
+                        <button type="submit" class="ebook-submit-btn">
+                            <i class="fas fa-download"></i>
+                            <span>Get My Free E-book</span>
+                            <div class="btn-shine"></div>
+                        </button>
+                        
+                        <p class="form-disclaimer">
+                            <i class="fas fa-shield-alt"></i>
+                            We respect your privacy. Unsubscribe at any time.
+                        </p>
+                    </form>
+                    
+                    <div class="success-message" id="successMessage" style="display: none;">
+                        <i class="fas fa-check-circle"></i>
+                        <h4>Success! Check your email</h4>
+                        <p>Your free e-book is on its way to your inbox!</p>
+                    </div>
                 </div>
             </div>
         </div>
@@ -1219,7 +1421,7 @@
         }, observerOptions);
 
         // Observe containers with staggered children
-        document.querySelectorAll('.gallery-grid, .testimonials-grid, .products-grid, .affiliate-grid, .health-categories, .process-accordion, .faq').forEach(el => {
+        document.querySelectorAll('.polaroid-gallery, .testimonials-grid, .products-grid, .affiliate-grid, .health-categories, .process-accordion, .faq').forEach(el => {
             staggerObserver.observe(el);
         });
 
@@ -1260,6 +1462,172 @@
         setViewportHeight();
         window.addEventListener('resize', setViewportHeight);
         window.addEventListener('orientationchange', setViewportHeight);
+        
+        // Gallery View More Toggle Function
+        function toggleGalleryView() {
+            const gallery = document.querySelector('.gallery');
+            const button = document.querySelector('.view-more-btn');
+            const buttonText = button.querySelector('.view-more-text');
+            const buttonIcon = button.querySelector('i');
+            
+            gallery.classList.toggle('gallery-expanded');
+            
+            if (gallery.classList.contains('gallery-expanded')) {
+                buttonText.textContent = 'Show Less Photos';
+                buttonIcon.className = 'fas fa-chevron-up';
+                button.setAttribute('aria-expanded', 'true');
+            } else {
+                buttonText.textContent = 'View More Photos';
+                buttonIcon.className = 'fas fa-chevron-down';
+                button.setAttribute('aria-expanded', 'false');
+            }
+        }
+
+        // Welcome Popup Functionality
+        document.addEventListener('DOMContentLoaded', function() {
+            const welcomePopup = document.getElementById('welcomePopup');
+            const closePopup = document.getElementById('closePopup');
+            const claimOfferBtn = document.getElementById('claimOfferBtn');
+            const learnMoreBtn = document.getElementById('learnMoreBtn');
+            
+            // Show popup after 2 seconds
+            setTimeout(() => {
+                welcomePopup.classList.add('active');
+                document.body.style.overflow = 'hidden';
+            }, 2000);
+            
+            // Close popup function
+            function closeWelcomePopup() {
+                welcomePopup.classList.remove('active');
+                document.body.style.overflow = '';
+            }
+            
+            // Close popup events
+            closePopup.addEventListener('click', closeWelcomePopup);
+            
+            welcomePopup.addEventListener('click', function(e) {
+                if (e.target === welcomePopup) {
+                    closeWelcomePopup();
+                }
+            });
+            
+            // Escape key to close
+            document.addEventListener('keydown', function(e) {
+                if (e.key === 'Escape' && welcomePopup.classList.contains('active')) {
+                    closeWelcomePopup();
+                }
+            });
+            
+            // Button 1: Claim Offer Now (redirect to store)
+            claimOfferBtn.addEventListener('click', function() {
+                closeWelcomePopup();
+                window.location.href = 'store.html';
+            });
+            
+            // Button 2: Learn More About Peptides (scroll to recommended products)
+            learnMoreBtn.addEventListener('click', function() {
+                closeWelcomePopup();
+                setTimeout(() => {
+                    document.getElementById('recommended').scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }, 300);
+            });
+        });
+        
+        // E-book Form Functionality
+        document.addEventListener('DOMContentLoaded', function() {
+            const ebookForm = document.querySelector('.email-form');
+            
+            if (ebookForm) {
+                ebookForm.addEventListener('submit', async function(e) {
+                    e.preventDefault();
+                    
+                    // Get form data
+                    const formData = new FormData(this);
+                    const name = formData.get('name') || formData.get('firstName') || '';
+                    const email = formData.get('email');
+                    
+                    // Validate data
+                    if (!email || !email.includes('@')) {
+                        alert('Please enter a valid email address.');
+                        return;
+                    }
+                    
+                    // Prepare data for submission
+                    const submissionData = {
+                        name: name,
+                        email: email,
+                        timestamp: new Date().toISOString(),
+                        source: 'Free E-book Signup'
+                    };
+                    
+                    try {
+                        // Send to Google Apps Script Web App
+                        const GOOGLE_SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbxcQ3bWp1G5JtFu2xUokkTN99CNkdggQx9sVsC6LzGvtpByrVpfXaWjdSnkgv1IJlIkKA/exec';
+                        
+                        // Create FormData for Google Apps Script compatibility
+                        const formData = new FormData();
+                        formData.append('name', submissionData.name);
+                        formData.append('email', submissionData.email);
+                        formData.append('timestamp', submissionData.timestamp);
+                        formData.append('source', submissionData.source);
+                        
+                        console.log('Sending data:', {
+                            name: submissionData.name,
+                            email: submissionData.email,
+                            timestamp: submissionData.timestamp,
+                            source: submissionData.source
+                        });
+                        
+                        const response = await fetch(GOOGLE_SCRIPT_URL, {
+                            method: 'POST',
+                            body: formData
+                        });
+                        
+                        console.log('Response status:', response.status);
+                        console.log('Response ok:', response.ok);
+                        
+                        // Get response text for debugging
+                        const responseText = await response.text();
+                        console.log('Response text:', responseText);
+                        
+                        // Check if request was successful
+                        if (response.ok) {
+                            console.log('Form submitted successfully');
+                            showSuccessMessage();
+                        } else {
+                            console.error('Response not ok. Status:', response.status, 'Text:', responseText);
+                            throw new Error(`Network response was not ok: ${response.status}`);
+                        }
+                        
+                    } catch (error) {
+                        console.error('Error saving to Google Sheets:', error);
+                        // Fallback: save to localStorage for later processing
+                        saveToLocalStorage(submissionData);
+                        showSuccessMessage(); // Still show success to user
+                    }
+                });
+            }
+            
+            function showSuccessMessage() {
+                const form = document.querySelector('.ebook-signup-form');
+                form.innerHTML = `
+                    <div class="success-message">
+                        <i class="fas fa-check-circle"></i>
+                        <h4>Thank You!</h4>
+                        <p>Your free e-book will be sent to your email shortly.</p>
+                    </div>
+                `;
+            }
+            
+            function saveToLocalStorage(data) {
+                const existingData = JSON.parse(localStorage.getItem('ebookSignups') || '[]');
+                existingData.push(data);
+                localStorage.setItem('ebookSignups', JSON.stringify(existingData));
+            }
+        });
     </script>
 </body>
 </html>

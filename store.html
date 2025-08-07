@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iron Butterfly Store - Health & Wellness Products</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="stylesheet.css">
+</head>
+<body>
+    <!-- Construction Notice Popup -->
+    <div class="popup-overlay construction-popup active" id="constructionPopup">
+        <div class="popup-container">
+            <div class="popup-content">
+                <div class="popup-header">
+                    <div class="popup-icon">
+                        <i class="fas fa-tools"></i>
+                    </div>
+                    <h2>Store Under Construction</h2>
+                    <p class="popup-subtitle">We're building something amazing!</p>
+                </div>
+                
+                <div class="popup-body">
+                    <div class="popup-text" style="text-align: center; grid-column: 1 / -1;">
+                        <h3>🚧 Coming Soon!</h3>
+                        <p>Our online store is currently under construction and will be available soon. In the meantime, check out our recommended products and trusted partners!</p>
+                        
+                        <div class="construction-features">
+                            <div class="benefit-item">
+                                <i class="fas fa-hammer"></i>
+                                <span>Building Premium Shopping Experience</span>
+                            </div>
+                            <div class="benefit-item">
+                                <i class="fas fa-shield-alt"></i>
+                                <span>Secure Payment Processing</span>
+                            </div>
+                            <div class="benefit-item">
+                                <i class="fas fa-truck"></i>
+                                <span>Fast & Reliable Shipping</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="popup-actions">
+                    <button class="popup-btn primary" id="backToHomeBtn">
+                        <i class="fas fa-home"></i>
+                        <span>Back to Home</span>
+                    </button>
+                </div>
+                
+                <div class="popup-footer">
+                    <p><i class="fas fa-clock"></i> Expected launch: Coming Soon!</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Store Content (Hidden) -->
+    <div class="store-content" style="display: none;">
+        <h1>Iron Butterfly Store</h1>
+        <p>Premium health and wellness products coming soon...</p>
+    </div>
+
+    <script>
+        // Construction popup functionality
+        document.getElementById('backToHomeBtn').addEventListener('click', function() {
+            window.location.href = 'index.html';
+        });
+    </script>
+</body>
+</html>
