@@ -21,8 +21,8 @@
                     <div class="popup-icon">
                         <i class="fas fa-gift"></i>
                     </div>
-                    <h2>Welcome to Iron Butterfly Coaching!</h2>
-                    <p class="popup-subtitle">Transform Your Health & Life Today</p>
+                    <h2>Claim Your Free E-book!</h2>
+                    <p class="popup-subtitle">Leave Your Email Below & Transform Your Health</p>
                 </div>
                 
                 <div class="popup-body">
@@ -31,21 +31,25 @@
                     </div>
                     
                     <div class="popup-text">
-                        <h3>🎯 Special Offer Inside!</h3>
-                        <p>Discover our exclusive health transformation programs and recommended products to kickstart your wellness journey.</p>
+                        <h3>🎯 What Happens Next:</h3>
+                        <p>Get instant access to our comprehensive health transformation guide! After you claim your free e-book, you'll receive exclusive video content, special offers, and the opportunity to book a personalized discovery call. Plus, enter your phone number for a chance to win exclusive prizes!</p>
                         
                         <div class="popup-benefits">
                             <div class="benefit-item">
                                 <i class="fas fa-check-circle"></i>
-                                <span>50% OFF E-book</span>
+                                <span>Free E-book Delivered Instantly</span>
                             </div>
                             <div class="benefit-item">
                                 <i class="fas fa-check-circle"></i>
-                                <span>Free Sample Pack</span>
+                                <span>Exclusive Video Introduction</span>
                             </div>
                             <div class="benefit-item">
                                 <i class="fas fa-check-circle"></i>
-                                <span>Exclusive Partner Discounts</span>
+                                <span>Special Discount Offers</span>
+                            </div>
+                            <div class="benefit-item">
+                                <i class="fas fa-check-circle"></i>
+                                <span>Lucky Draw Entry with Phone Number</span>
                             </div>
                         </div>
                     </div>
@@ -53,19 +57,19 @@
                 
                 <div class="popup-actions">
                     <button class="popup-btn primary" id="claimOfferBtn">
-                        <i class="fas fa-shopping-cart"></i>
-                        <span>Claim Offer Now</span>
+                        <i class="fas fa-download"></i>
+                        <span>Get My Free E-book Now</span>
                     </button>
                     <button class="popup-btn secondary" id="learnMoreBtn">
-                        <i class="fas fa-star"></i>
-                        <span>Learn More About Peptides</span>
+                        <i class="fas fa-phone"></i>
+                        <span>Book a Discovery Call</span>
                     </button>
                 </div>
                 
                 <div class="popup-footer">
                     <p><i class="fas fa-clock"></i> Limited time offer - Don't miss out!</p>
                     <p class="ebook-link">
-                        Or get our <a href="#ebook-signup" id="freeEbookLink">FREE Health Transformation E-book</a> 📚
+                        Enter your details below for <a href="#ebook-signup" id="freeEbookLink">instant access</a> 📚
                     </p>
                 </div>
             </div>
@@ -1518,17 +1522,22 @@
                 }
             });
             
-            // Button 1: Claim Offer Now (redirect to store)
+            // Button 1: Get My Free E-book Now (scroll to e-book signup)
             claimOfferBtn.addEventListener('click', function() {
                 closeWelcomePopup();
-                window.location.href = 'store.html';
+                setTimeout(() => {
+                    document.getElementById('ebook-signup').scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }, 300);
             });
             
-            // Button 2: Learn More About Peptides (scroll to recommended products)
+            // Button 2: Book a Discovery Call (scroll to discovery section)
             learnMoreBtn.addEventListener('click', function() {
                 closeWelcomePopup();
                 setTimeout(() => {
-                    document.getElementById('recommended').scrollIntoView({
+                    document.getElementById('discovery').scrollIntoView({
                         behavior: 'smooth',
                         block: 'start'
                     });
