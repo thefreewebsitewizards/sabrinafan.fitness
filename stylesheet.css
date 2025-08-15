@@ -2586,6 +2586,9 @@ html, body {
     position: relative;
     border: 2px solid transparent;
     overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
 }
 
 .pricing-card::before {
@@ -2716,12 +2719,16 @@ html, body {
 /* Card Body */
 .card-body {
     text-align: left;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
 }
 
 .features {
     list-style: none;
     padding: 0;
     margin: 0 0 2rem 0;
+    flex-grow: 1;
 }
 
 .features li {
