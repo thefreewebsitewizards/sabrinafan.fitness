@@ -9,64 +9,227 @@
     <link rel="stylesheet" href="stylesheet.css">
 </head>
 <body>
-    <!-- Construction Notice Popup -->
-    <div class="popup-overlay construction-popup active" id="constructionPopup">
-        <div class="popup-container">
-            <div class="popup-content">
-                <div class="popup-header">
-                    <div class="popup-icon">
-                        <i class="fas fa-tools"></i>
-                    </div>
-                    <h2>Store Under Construction</h2>
-                    <p class="popup-subtitle">We're building something amazing!</p>
-                </div>
-                
-                <div class="popup-body">
-                    <div class="popup-text" style="text-align: center; grid-column: 1 / -1;">
-                        <h3>🚧 Coming Soon!</h3>
-                        <p>Our online store is currently under construction and will be available soon. In the meantime, check out our recommended products and trusted partners!</p>
-                        
-                        <div class="construction-features">
-                            <div class="benefit-item">
-                                <i class="fas fa-hammer"></i>
-                                <span>Building Premium Shopping Experience</span>
-                            </div>
-                            <div class="benefit-item">
-                                <i class="fas fa-shield-alt"></i>
-                                <span>Secure Payment Processing</span>
-                            </div>
-                            <div class="benefit-item">
-                                <i class="fas fa-truck"></i>
-                                <span>Fast & Reliable Shipping</span>
-                            </div>
+    <!-- Navbar -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="index.html#home" class="logo">
+                <img src="images/logo-removebg-preview.png" alt="Iron Butterfly Logo" class="logo-image">
+                <span>Iron Butterfly Coaching</span>
+            </a>
+            <ul class="nav-links">
+                <li><a href="index.html#home">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="index.html#process">Process</a></li>
+                <li><a href="index.html#gallery">Gallery</a></li>
+                <li><a href="index.html#testimonials">Testimonials</a></li>
+                <li><a href="index.html#social">Connect</a></li>
+                <li><a href="index.html#discovery">Discovery</a></li>
+            </ul>
+            <div class="mobile-menu-toggle" id="mobile-menu-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Store Hero Section -->
+    <section class="hero store-hero" id="store-hero" style="position: relative; padding-top: 120px;">
+        <div class="section-butterflies">
+            <div class="butterfly" style="top: 20%; left: 15%; animation-delay: 0s;">🦋</div>
+            <div class="butterfly" style="top: 60%; left: 80%; animation-delay: 3s;">🦋</div>
+            <div class="butterfly" style="top: 40%; left: 70%; animation-delay: 6s;">🦋</div>
+        </div>
+        <div class="section-particles">
+            <div class="particle" style="top: 30%; left: 25%;"></div>
+            <div class="particle" style="top: 70%; left: 60%;"></div>
+        </div>
+        <div class="section-stars">
+            <div class="star" style="top: 15%; left: 10%; animation-delay: 0s;">✦</div>
+            <div class="star" style="top: 25%; left: 85%; animation-delay: 1s;">✧</div>
+            <div class="star" style="top: 75%; left: 20%; animation-delay: 2s;">✦</div>
+            <div class="star" style="top: 45%; left: 90%; animation-delay: 3s;">✧</div>
+        </div>
+        <div class="hero-container">
+            <div class="hero-content">
+                <h1>Choose Your <span class="highlight">Transformation Plan</span></h1>
+                <p>Invest in your complete wellness journey with personalized coaching, biohacking protocols, and 24/7 support.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section class="section pricing fade-in" id="pricing" style="position: relative;">
+        <div class="section-butterflies">
+            <div class="butterfly" style="top: 25%; left: 5%; animation-delay: 0.5s;">🦋</div>
+            <div class="butterfly" style="top: 75%; left: 90%; animation-delay: 3.5s;">🦋</div>
+            <div class="butterfly" style="top: 45%; left: 50%; animation-delay: 6.5s;">🦋</div>
+        </div>
+        <div class="section-particles">
+            <div class="particle" style="top: 15%; left: 75%;"></div>
+            <div class="particle" style="top: 85%; left: 25%;"></div>
+        </div>
+        <div class="section-stars">
+            <div class="star" style="top: 20%; left: 30%; animation-delay: 1.5s;">✦</div>
+            <div class="star" style="top: 60%; left: 80%; animation-delay: 2.5s;">✧</div>
+            <div class="star" style="top: 80%; left: 60%; animation-delay: 4s;">✦</div>
+        </div>
+        <div class="container">
+            <div class="pricing-grid">
+                <!-- Fitness Coaching Plan -->
+                <div class="pricing-card basic">
+                    <div class="card-header">
+                        <div class="plan-icon">
+                            <i class="fas fa-dumbbell"></i>
+                        </div>
+                        <h4>Fitness Coaching</h4>
+                        <div class="price">
+                            <span class="currency">$</span>
+                            <span class="amount">149</span>
+                            <span class="period">/month</span>
                         </div>
                     </div>
+                    <div class="card-body">
+                        <ul class="features">
+                            <li><i class="fas fa-check"></i> Personalized workout plans</li>
+                            <li><i class="fas fa-check"></i> Nutrition guidance</li>
+                            <li><i class="fas fa-check"></i> Weekly check-ins</li>
+                            <li><i class="fas fa-check"></i> Progress tracking</li>
+                        </ul>
+                        <a href="index.html#discovery" class="plan-button">
+                            <i class="fas fa-arrow-right"></i>
+                            Get Started
+                        </a>
+                    </div>
                 </div>
-                
-                <div class="popup-actions">
-                    <button class="popup-btn primary" id="backToHomeBtn">
-                        <i class="fas fa-home"></i>
-                        <span>Back to Home</span>
-                    </button>
+
+                <!-- Monthly Check-in Plan -->
+                <div class="pricing-card premium">
+                    <div class="popular-badge">Most Popular</div>
+                    <div class="card-header">
+                        <div class="plan-icon">
+                            <i class="fas fa-calendar-check"></i>
+                        </div>
+                        <h4>Monthly Check-in</h4>
+                        <div class="price">
+                            <span class="currency">$</span>
+                            <span class="amount">249</span>
+                            <span class="period">/month</span>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <ul class="features">
+                            <li><i class="fas fa-check"></i> Everything in Fitness Coaching</li>
+                            <li><i class="fas fa-check"></i> Monthly wellness coaching</li>
+                            <li><i class="fas fa-check"></i> Supplement recommendations</li>
+                            <li><i class="fas fa-check"></i> Lifestyle optimization</li>
+                            <li><i class="fas fa-check"></i> Direct access to Sabrina</li>
+                        </ul>
+                        <a href="index.html#discovery" class="plan-button">
+                            <i class="fas fa-rocket"></i>
+                            Start Transformation
+                        </a>
+                    </div>
                 </div>
-                
-                <div class="popup-footer">
-                    <p><i class="fas fa-clock"></i> Expected launch: Coming Soon!</p>
+
+                <!-- All Inclusive Biohacking Plan -->
+                <div class="pricing-card elite">
+                    <div class="card-header">
+                        <div class="plan-icon">
+                            <i class="fas fa-crown"></i>
+                        </div>
+                        <h4>All Inclusive Biohacking</h4>
+                        <div class="price">
+                            <span class="currency">$</span>
+                            <span class="amount">499</span>
+                            <span class="period">/month</span>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <ul class="features">
+                            <li><i class="fas fa-check"></i> Everything in Monthly Check-in</li>
+                            <li><i class="fas fa-check"></i> Complete supplement protocols</li>
+                            <li><i class="fas fa-check"></i> Advanced biohacking strategies</li>
+                            <li><i class="fas fa-check"></i> Functional medicine approach</li>
+                            <li><i class="fas fa-check"></i> Mindset & lifestyle coaching</li>
+                            <li><i class="fas fa-check"></i> Priority support & access</li>
+                        </ul>
+                        <a href="index.html#discovery" class="plan-button">
+                            <i class="fas fa-star"></i>
+                            Go Elite
+                        </a>
+                    </div>
+                </div>
+
+                <!-- A la carte Plan -->
+                <div class="pricing-card alacarte">
+                    <div class="card-header">
+                        <div class="plan-icon">
+                            <i class="fas fa-user-clock"></i>
+                        </div>
+                        <h4>A la carte</h4>
+                        <div class="price">
+                            <span class="original-price">$149</span>
+                            <span class="currency">$</span>
+                            <span class="amount">99</span>
+                            <span class="period">/hr</span>
+                        </div>
+                        <p class="new-client-note">For new clients only</p>
+                    </div>
+                    <div class="card-body">
+                        <ul class="features">
+                            <li><i class="fas fa-check"></i> One-time consultation</li>
+                            <li><i class="fas fa-check"></i> Personalized assessment</li>
+                            <li><i class="fas fa-check"></i> Custom recommendations</li>
+                            <li><i class="fas fa-check"></i> Follow-up resources</li>
+                        </ul>
+                        <a href="index.html#discovery" class="plan-button">
+                            <i class="fas fa-calendar"></i>
+                            Book Session
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="pricing-footer">
+                <div class="guarantee">
+                    <i class="fas fa-shield-alt"></i>
+                    <span>100% Satisfaction Guaranteed - Cancel Anytime</span>
+                </div>
+                <p class="pricing-note">All plans include personalized support and can be customized to your specific needs.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- QR Code Section -->
+    <section class="section qr-section fade-in" id="qr-section" style="position: relative;">
+        <div class="container">
+            <h2 class="section-title fade-in">
+                <i class="fas fa-qrcode"></i>
+                Quick Access
+            </h2>
+            <div class="qr-container">
+                <div class="qr-content">
+                    <h3>Scan to Connect</h3>
+                    <p>Quick access to our services and contact information</p>
+                    <div class="qr-image">
+                        <img src="images/QR.jpg" alt="QR Code for Iron Butterfly Coaching" onerror="this.src='https://via.placeholder.com/300x300/E8F4FD/4A5568?text=QR+Code'">
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
-
-    <!-- Store Content (Hidden) -->
-    <div class="store-content" style="display: none;">
-        <h1>Iron Butterfly Store</h1>
-        <p>Premium health and wellness products coming soon...</p>
-    </div>
+    </section>
 
     <script>
-        // Construction popup functionality
-        document.getElementById('backToHomeBtn').addEventListener('click', function() {
-            window.location.href = 'index.html';
+        // Mobile menu functionality
+        document.getElementById('mobile-menu-toggle').addEventListener('click', function() {
+            document.getElementById('mobile-nav').classList.toggle('active');
+            document.getElementById('mobile-overlay').classList.toggle('active');
+        });
+
+        document.getElementById('mobile-overlay').addEventListener('click', function() {
+            document.getElementById('mobile-nav').classList.remove('active');
+            document.getElementById('mobile-overlay').classList.remove('active');
         });
     </script>
 </body>
